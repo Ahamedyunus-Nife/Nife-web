@@ -49,7 +49,14 @@ export default function NavBarUpdates() {
                     {updates.length > 0 && (
                         <Typography
                             sx={{ cursor: "pointer" }}
-                            onClick={() => navigate(updates[currentIndex].url)} // Use navigate instead of window.location.href
+                            onClick={() => {
+                                const url = updates[currentIndex].url;
+                                if (url.startsWith("http")) {
+                                    window.location.href = url;  // Redirect external links
+                                } else {
+                                    navigate(url);  // Use navigate for internal links
+                                }
+                            }} // Use navigate for internal routing & window.location.href for external links
                         >
                             {updates[currentIndex].title} →
                         </Typography>

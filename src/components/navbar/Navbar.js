@@ -51,7 +51,13 @@ function NavBar() {
               </Grid>
 
             }>
-              <Typography>Platform<svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M128 192l128 128 128-128z"></path></svg></Typography>
+              <Typography 
+              sx={{
+                cursor: "pointer", transition: 'opacity 0.3s ease',
+                '&:hover': {
+                  opacity: 0.5,
+                }
+              }}>Platform<svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M128 192l128 128 128-128z"></path></svg></Typography>
             </HoverBoxTooltip>
 
             <HoverBoxTooltip title={
@@ -80,7 +86,13 @@ function NavBar() {
               </Grid>
 
             }>
-              <Typography className="px-lg-3">Solutions<svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M128 192l128 128 128-128z"></path></svg></Typography>
+              <Typography className="px-lg-3"
+              sx={{
+                cursor: "pointer", transition: 'opacity 0.3s ease',
+                '&:hover': {
+                  opacity: 0.5,
+                }
+              }}>Solutions<svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M128 192l128 128 128-128z"></path></svg></Typography>
             </HoverBoxTooltip>
 
             <HoverBoxTooltip title={
@@ -195,14 +207,24 @@ function NavBar() {
                     }
                     placement="right" // Tooltip appears on the right side
                   >
-                    <Typography>
+                    <Typography
+                    sx={{ 
+                        py:1,
+                        cursor: "pointer",
+                        transition: "background 0.3s ease, opacity 0.3s ease",
+                        '&:hover': { 
+                        background: "rgba(255, 255, 255, 0.1)", 
+                        borderRadius: "8px",
+                        opacity: 0.8 
+                                  }
+                        }}>
                       <ListItemIcon>
                         <IconButton aria-labelledby='Case Study Icon' sx={{ borderRadius: "12px", border: "1px solid rgba(255, 255, 255, 0.3)",ml:1,mt:1 }}>
                           <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M428 224H288a48 48 0 0 1-48-48V36a4 4 0 0 0-4-4h-92a64 64 0 0 0-64 64v320a64 64 0 0 0 64 64h224a64 64 0 0 0 64-64V228a4 4 0 0 0-4-4zm-92 160H176a16 16 0 0 1 0-32h160a16 16 0 0 1 0 32zm0-80H176a16 16 0 0 1 0-32h160a16 16 0 0 1 0 32z"></path><path d="M419.22 188.59 275.41 44.78a2 2 0 0 0-3.41 1.41V176a16 16 0 0 0 16 16h129.81a2 2 0 0 0 1.41-3.41z"></path></svg>
                         </IconButton>
+                        <ListItemText primary={"E book"} secondary="view details" sx={{ml:2, mt:1}} />
                       </ListItemIcon>
-                      E Book
-                      <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 24 24"><path fill="currentColor" d="m10 17l5-5l-5-5z" /></svg>
+                     <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 24 24"><path fill="currentColor" d="m10 17l5-5l-5-5z" /></svg>
                     </Typography>
                   </HoverBoxTooltip>
 
@@ -210,7 +232,12 @@ function NavBar() {
               </Box>
             }>
 
-              <Typography className="pr-lg-3">
+              <Typography className="pr-lg-3" sx={{
+              cursor: "pointer", transition: 'opacity 0.3s ease',
+              '&:hover': {
+                opacity: 0.5,
+              }
+            }}>
                 Resources<svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M128 192l128 128 128-128z"></path></svg>
               </Typography>
             </HoverBoxTooltip >
@@ -272,7 +299,13 @@ function NavBar() {
 
               </Box>
             }>
-              <Typography className="px-lg-3">
+              <Typography className="px-lg-3"
+              sx={{
+                cursor: "pointer", transition: 'opacity 0.3s ease',
+                '&:hover': {
+                  opacity: 0.5,
+                }
+              }}>
                 Company<svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M128 192l128 128 128-128z"></path></svg>
               </Typography>
             </HoverBoxTooltip>
