@@ -1,0 +1,58 @@
+.inventory-section {
+    padding: 2rem;
+    background-color: #121212; /* Dark background for dark mode */
+    color: #e0e0e0; /* Light text color for dark mode */
+  }
+  
+  .points-list {
+    margin-bottom: 1.5rem;
+  }
+  
+  .point-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  
+  .point-icon {
+    font-size: 2rem;
+    color: #0d6efd; /* Icon color */
+    margin-right: 1rem;
+  }
+  
+  .point-content h4 {
+    color: #ffffff; /* White color for titles */
+    margin: 0;
+  }
+  
+  .point-content p {
+    color: #b0b0b0; /* Slightly lighter text color for descriptions */
+  }
+  
+  .inventory-section Button {
+    background-color: #0d6efd; /* Primary button color */
+    border-color: #0d6efd;
+  }
+  
+  .inventory-section Button:hover {
+    background-color: #0056b3; /* Darker shade for hover effect */
+    border-color: #004085;
+  }
+  
+  .inventory-img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #333; 
+    filter: brightness(100%) contrast(110%);
+    opacity: 0.9;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 4px 8px #5e35b6;
+    border-radius: 8px;/* Optional: add a border to make the image stand out */
+  }
+  
+  @media (max-width: 768px) {
+    .inventory-img {
+      margin-top: 1rem;
+    }
+  }
+  
