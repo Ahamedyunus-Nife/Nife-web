@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" href="%PUBLIC_URL%/favicon.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <meta name="description"
+    content="Nife is a global edge application platform company that rapidly empowers enterprises and developers to launch their applications. Connect to any Cloud, Bare-metal, or Kubernetes servers and infrastructure management. It’s all about seamless automation, allowing you to focus on what truly matters." />
+  <link rel="apple-touch-icon" href="%PUBLIC_URL%/favicon.png" />
+  <link rel="canonical" href="https://nife.io" />
+
+  <meta name="keywords"
+    content="cloud deployment, cost optimization, bare-metal servers, Kubernetes, Nife platform, seamless automation, application management, continuous deployment, GitHub integration, Docker, infrastructure management, cloud scaling, BYOC, BYOH, serverless architecture, renewable energy, database management, cost analysis, multi-cloud support, security compliance, ISO, GDPR, TLS, DDoS protection">
+
+
+  <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+  <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+  <title>Nife | Hybrid Cloud Platform</title>
+  <!-- Schema.org JSON-LD structured data -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Nife Labs",
+      "url": "https://nife.io",
+      "logo": "https://nife.io/static/media/logo.2a112da78536c5540591.png",
+      "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "+65 8265 3455",
+          "contactType": "Technical Support",
+          "areaServed": "SG",
+          "availableLanguage": "English"
+      },
+      "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "68 Circular Rd",
+          "addressLocality": "Singapore",
+          "postalCode": "049422",
+          "addressCountry": "SG"
+      },
+      "description": "Nife Labs is a leading global provider of continuous deployment software and cloud management platform. Our cutting-edge solutions empower enterprises and developers to seamlessly launch and scale applications within the Nife Edge Grid.",
+      "sameAs": [
+          "https://www.linkedin.com/company/nifeio/",
+          "https://x.com/nifeio",
+          "https://www.facebook.com/nifeio/",
+          "https://www.instagram.com/nife.io/",
+          "https://www.youtube.com/channel/UCBlr6Wk9hcq2WlOnWpYu9LA"
+      ],
+      "additionalType": "https://schema.org/SoftwareApplication",
+      "applicationCategory": "Cloud Platform",
+      "product": [
+          {
+              "@type": "Product",
+              "name": "Oikos by Nife",
+              "description": "Oikos by Nife is a developer-friendly serverless platform designed to simplify the management, deployment, and scaling of applications globally.",
+              "url": "https://launch.nife.io/",
+              "image": "https://docs.nife.io/assets/images/app-e28bb5d464858026c76bb2b25ee03b33.png",
+              "brand": {
+                  "@type": "Brand",
+                  "name": "Nife"
+              },
+              "additionalType": "https://schema.org/SoftwareApplication",
+              "offers": [
+                  {
+                      "@type": "Offer",
+                      "url": "https://nife.io/plans/hobby",
+                      "name": "Hobby",
+                      "priceCurrency": "USD",
+                      "price": "5.00",
+                      "priceSpecification": {
+                          "@type": "PriceSpecification",
+                          "priceCurrency": "USD",
+                          "price": "5.00",
+                          "priceType": "http://schema.org/Subscription",
+                          "validFrom": "2024-09-01"
+                      },
+                      "description": "Ideal for one application with basic features. Deploy from GIT Repo directly, no credit card needed, deploy a single application to a location, deploy to Nife Public Cloud."
+                  },
+                  {
+                      "@type": "Offer",
+                      "url": "https://nife.io/plans/starter",
+                      "name": "Starter",
+                      "priceCurrency": "USD",
+                      "price": "99.00",
+                      "priceSpecification": {
+                          "@type": "PriceSpecification",
+                          "priceCurrency": "USD",
+                          "price": "99.00",
+                          "priceType": "http://schema.org/Subscription",
+                          "validFrom": "2024-09-01"
+                      },
+                      "description": "Ideal for small scale deployments. Includes features from Hobby plus deployment from Docker, BYOH (Bring Your Own Host), deploy to any location, secrets and global environment variables, and the ability to invite a member."
+                  },
+                  {
+                      "@type": "Offer",
+                      "url": "https://nife.io/plans/premium",
+                      "name": "Premium",
+                      "priceCurrency": "USD",
+                      "price": "169.00",
+                      "priceSpecification": {
+                          "@type": "PriceSpecification",
+                          "priceCurrency": "USD",
+                          "price": "169.00",
+                          "priceType": "http://schema.org/Subscription",
+                          "validFrom": "2024-09-01"
+                      },
+                      "description": "Ideal for performance-centric, complex applications with hybrid infrastructure. Includes features from Starter plus complex and hybrid deployments, 5 deployments to any locations, cost-effective reservations, contact support, workload management."
+                  },
+                  {
+                      "@type": "Offer",
+                      "url": "https://nife.io/plans/enterprise",
+                      "name": "Enterprise",
+                      "priceCurrency": "USD",
+                      "price": "1000.00",
+                      "priceSpecification": {
+                          "@type": "PriceSpecification",
+                          "priceCurrency": "USD",
+                          "price": "Custom Pricing",
+                          "priceType": "http://schema.org/Subscription",
+                          "validFrom": "2024-09-01"
+                      },
+                      "description": "Bespoke plan for extensive super scale, enterprise application, network, and infrastructure needs. Includes all Premium features plus custom access to edge, bring your own edge, bespoke platform, unlimited invite members, custom onboarding, dedicated account manager, and custom pricing."
+                  }
+              ]
+          },
+          {
+              "@type": "Product",
+              "name": "Platus by Nife",
+              "description": "Platus by Nife helps navigate deployment budgets with precision by connecting your cloud accounts to gain in-depth insights into your cloud infrastructure.",
+              "url": "https://platus.clb2.nifetency.com/",
+              "image": "https://nife.io/static/media/finops-dash.0b51e9dcd1aab3ad4f17.png",
+              "brand": {
+                  "@type": "Brand",
+                  "name": "Nife"
+              },
+              "additionalType": "https://schema.org/SoftwareApplication",
+              "review": [
+                  {
+                      "@type": "Review",
+                      "author": {
+                          "@type": "Person",
+                          "name": "Samir Hasan"
+                      },
+                      "reviewBody": "We choose Nife because our customers need global hyperlocal Infra. Our customers get Privacy, Security and even the regional scaling via Nife",
+                      "reviewRating": {
+                          "@type": "Rating",
+                          "ratingValue": "5",
+                          "bestRating": "5"
+                      },
+                      "datePublished": "2024-09-01"
+                  },
+                  {
+                      "@type": "Review",
+                      "author": {
+                          "@type": "Person",
+                          "name": "Deepak Pedro"
+                      },
+                      "reviewBody": "Nife was of great help in all our deployment and hosting challenges. The team was available for any queries at any given point. Looking forward to having more successful collabs in future with Nife.",
+                      "reviewRating": {
+                          "@type": "Rating",
+                          "ratingValue": "5",
+                          "bestRating": "5"
+                      },
+                      "datePublished": "2024-09-01"
+                  },
+                  {
+                      "@type": "Review",
+                      "author": {
+                          "@type": "Person",
+                          "name": "Akhilesh Shetty"
+                      },
+                      "reviewBody": "Nife.io has been a game-changer for us at Avirays. Our website, which used to face numerous performance issues, is now running smoothly and efficiently thanks to nife.io's cutting-edge platform. The user- friendly interface and robust features of nife.io have enhanced our site’s performance and made it easier for us to manage and deploy updates.",
+                      "reviewRating": {
+                          "@type": "Rating",
+                          "ratingValue": "5",
+                          "bestRating": "5"
+                      },
+                      "datePublished": "2024-09-01"
+                  },
+                  {
+                      "@type": "Review",
+                      "author": {
+                          "@type": "Person",
+                          "name": "Shivam Gupta"
+                      },
+                      "reviewBody": "We got all our branches updated in time, and releases are very smooth",
+                      "reviewRating": {
+                          "@type": "Rating",
+                          "ratingValue": "5",
+                          "bestRating": "5"
+                      },
+                      "datePublished": "2024-09-01"
+                  },
+                  {
+                      "@type": "Review",
+                      "author": {
+                          "@type": "Organization",
+                          "name": "chaotix.ai"
+                      },
+                      "reviewBody": "Nida and the team are absolutely committed to solving the problems of their partners. Some of our deployment challenges were stuck for over a month. While we spent days trying to get customer support from the similar services provider that we were using at that moment and looking for solutions over the internet, we came across the team of Nife. They’ve been extremely helpful in making sure our product went live without friction. They were able to reduce our deployment time from 20 minutes to less than 5 minutes. Nida’s team were available for calls and assistance even at odd hours, going out of their way to smoothen our transition. I sincerely appreciate her and the team’s work.",
+                      "reviewRating": {
+                          "@type": "Rating",
+                          "ratingValue": "5",
+                          "bestRating": "5"
+                      },
+                      "datePublished": "2024-09-01"
+                  },
+                  {
+                      "@type": "Review",
+                      "author": {
+                          "@type": "Person",
+                          "name": "Syed Shazli Hussain"
+                      },
+                      "reviewBody": "Nife is a very simple to use, easy product. Good for SMBs and Startups.",
+                      "reviewRating": {
+                          "@type": "Rating",
+                          "ratingValue": "5",
+                          "bestRating": "5"
+                      },
+                      "datePublished": "2024-09-01"
+                  },
+                  {
+                      "@type": "Review",
+                      "author": {
+                          "@type": "Person",
+                          "name": "Nabayan Roy"
+                      },
+                      "reviewBody": "Nife's platform product, Oikos, impressed me with its simple design and user-friendly onboarding experience. Oikos is the preferred platform for companies looking for easy and hassle-free deployment at competitive pricing, aimed at reducing operational costs associated with maintaining and managing cloud infrastructure and deployments.",
+                      "reviewRating": {
+                          "@type": "Rating",
+                          "ratingValue": "5",
+                          "bestRating": "5"
+                      },
+                      "datePublished": "2024-09-01"
+                  },
+                  {
+                      "@type": "Review",
+                      "author": {
+                          "@type": "Person",
+                          "name": "Kiran Iyengar"
+                      },
+                      "reviewBody": "The platform is super intuitive with cost optimization and quick ci/cd integrations. Deployments took less than 30 seconds. To add to it the platform provides application monitoring metrics.",
+                      "reviewRating": {
+                          "@type": "Rating",
+                          "ratingValue": "5",
+                          "bestRating": "5"
+                      },
+                      "datePublished": "2024-09-01"
+                  }
+              ],
+              "aggregateRating": {
+                  "@type": "AggregateRating",
+                  "ratingValue": "5",
+                  "bestRating": "5",
+                  "ratingCount": "8",
+                  "reviewCount": "8"
+              },
+              "offers": [
+                  {
+                      "@type": "Offer",
+                      "url": "https://nife.io/plans/platus-custom",
+                      "name": "Platus Custom Plan",
+                      "priceCurrency": "USD",
+                      "price": "10.00",
+                      "priceSpecification": {
+                          "@type": "PriceSpecification",
+                          "priceCurrency": "USD",
+                          "price": "0.00",
+                          "priceType": "http://schema.org/Subscription",
+                          "validFrom": "2024-09-01",
+                          "validThrough": "2024-12-31"
+                      },
+                      "description": "Customized plan for enterprise cloud cost management and optimization. Includes multi-cloud support, cost forecasting, budgeting, analytics, and a custom monitoring dashboard with dedicated support."
+                  }
+              ]
+          }
+      ]
+  }
+    </script>
+
+
+
+</head>
+
+<body>
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <div id="root"></div>
+  <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+
+  <script type="text/javascript">
+    (function (e, t, o, n, p, r, i) { e.visitorGlobalObjectAlias = n; e[e.visitorGlobalObjectAlias] = e[e.visitorGlobalObjectAlias] || function () { (e[e.visitorGlobalObjectAlias].q = e[e.visitorGlobalObjectAlias].q || []).push(arguments) }; e[e.visitorGlobalObjectAlias].l = (new Date).getTime(); r = t.createElement("script"); r.src = o; r.async = true; i = t.getElementsByTagName("script")[0]; i.parentNode.insertBefore(r, i) })(window, document, "https://diffuser-cdn.app-us1.com/diffuser/diffuser.js", "vgo");
+    vgo('setAccount', '253757379');
+    vgo('setTrackByDefault', true);
+    vgo('process');
+  </script>
+  <script>
+    (function (d, t) {
+      var BASE_URL = "https://app.chatwoot.com";
+      var g = d.createElement(t), s = d.getElementsByTagName(t)[0];
+      g.src = BASE_URL + "/packs/js/sdk.js";
+      g.defer = true;
+      g.async = true;
+      s.parentNode.insertBefore(g, s);
+      g.onload = function () {
+        window.chatwootSDK.run({
+          websiteToken: 'f64ePLWKa8ixubzaKv9N94Nx',
+          baseUrl: BASE_URL
+        })
+      }
+    })(document, "script");
+  </script>
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-197673731-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'UA-197673731-1');
+  </script>
+  <script type="text/javascript">
+    (function (c, l, a, r, i, t, y) {
+      c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments) };
+      t = l.createElement(r); t.async = 1; t.src = "https://www.clarity.ms/tag/" + i;
+      y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y);
+    })(window, document, "clarity", "script", "b5j2123ky5");
+  </script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-TSD5NZDRF9"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date()); gtag('config', 'G-TSD5NZDRF9');
+  </script>
+  <script>_VH_CODE = 9067951901;</script>
+  <script src="https://visithunter.io/collect.js"></script>
+</body>
+
+</html>

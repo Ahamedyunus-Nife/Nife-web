@@ -1,0 +1,5 @@
+User-agent: *
+Disallow:
+
+# Specify the location of your XML sitemap
+Sitemap: https://nife.io/sitemap.xml
